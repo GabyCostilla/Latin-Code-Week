@@ -73,3 +73,21 @@
   color: #555;
   line-height: 1.6;
 }
+
+/* Estilos para las redes sociales */
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-media-links a:hover {
+  color: #007bff;
+}

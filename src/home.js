@@ -47,6 +47,18 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div className="social-media-links">
+        <a href="https://github.com/GabyCostilla" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/GABYGAMER2HELL1" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/gabnzana_en_compota/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
   );
 }
