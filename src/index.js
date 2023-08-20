@@ -7,6 +7,7 @@ import Register from "./register";
 import Contact from "./contact";
 import Navbar from "./navbar"
 import Inversion from "./inversion"
+import News from "./news"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -17,6 +18,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="register" element={<Register />} />
           <Route path="inversion" element={<Inversion />} />
+          <Route path="news" element={<News />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
