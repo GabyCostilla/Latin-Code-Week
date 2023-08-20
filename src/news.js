@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./news.css"
+
 function News() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
     const apiKey = '29425ccef3844a2f982c8d0f65fa4230'; // Reemplaza con tu clave de API
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/everything?q=energ%C3%ADa%20renovable&apiKey=${apiKey}`;
 
     axios.get(apiUrl)
       .then(response => {
@@ -19,7 +20,7 @@ function News() {
 
   return (
     <div className="news-container">
-      <h2>Últimas Noticias</h2>
+      <h2 className="news-title">Últimas Noticias sobre Energías Renovables</h2>
       <ul className="news-list">
         {news.map((article, index) => (
           <li key={index} className="news-item">
