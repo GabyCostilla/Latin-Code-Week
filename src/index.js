@@ -6,6 +6,7 @@ import Home from "./home";
 import Contact from "./contact";
 import Geoter from "./geotermica";
 import Eolica from "./eolica";
+import Solar from "./solar";
 import Navbar from "./navbar";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ root.render(
           <Route path="contact" element={<Contact />} />
           <Route path="geotermica" element={<Geoter />} />
           <Route path="eolica" element={<Eolica />} />
+          <Route path="solar" element={<Solar />} />
         </Route>
       </Routes>
     </BrowserRouter>

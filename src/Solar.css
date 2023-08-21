@@ -1,0 +1,22 @@
+.solar-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.solar-header {
+    background-color: #fdf500;
+    color: white;
+    padding: 20px;
+}
+
+.solar-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.solar-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
