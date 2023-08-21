@@ -1,28 +1,30 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
+import { useSpring, animated, config } from "react-spring";
+import "./home.css";
 
 function Home() {
+  const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, config: config.slow });
+  const slideInFromTop = useSpring({ top: "0", from: { top: "-100px" }, config: config.wobbly });
+
   return (
-    <div className="App">
+    <animated.div className="App" style={fadeIn}>
       <header className="App-header">
-        <h1>Bienveidos a Renewable Energy</h1>
-        <p>el sitio web en donde te explicamos acerca de la principales energias renovables</p>
+        <animated.h1 style={slideInFromTop}>Bienvenidos a Renewable Energy</animated.h1>
+        <p>Explora el mundo de las energías renovables</p>
         <div className="container">
-          <div>
-          <Link to="/solar" className="solar">Energia Solar</Link>
-          <Link to="/eolica" className="eolico">Energia Eolica</Link>
-          <Link to="/geotermica" className="geotermico">Energia Geotérmica</Link>
-          <h6>oprime alguno de los botones para saber más...</h6>
-        </div><br></br>
-        <div>
-        <img src="https://www.portalsolar.com.br/_next/image?url=https%3A%2F%2Finstitucional-and-info-production.s3.us-east-2.amazonaws.com%2Fimages%2F62c812d3-77bf-471f-bd45-1393eec5b0aa%2Fenergia-solar.jpg&w=3840&q=100" width="300" height="200" alt="paneles solares"></img>
-        <img src="data:image/jpeg;base64,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" width="300" height="200" alt="ventiladores eolicos"></img>
-        <img src="https://ekkogreen.com.br/wp-content/uploads/2023/04/image-13.png" width="300" height="200" alt="generadores geotermicos"></img>
+          <div className="links">
+            <Link to="/solar" className="solar">Energía Solar</Link>
+            <Link to="/eolica" className="eolico">Energía Eólica</Link>
+            <Link to="/geotermica" className="geotermico">Energía Geotérmica</Link>
+            <animated.h6 style={fadeIn}>¡Haz clic en uno de los botones para saber más!</animated.h6>
+          </div>
+          <div className="image-container">
+            <img src="https://www.portalsolar.com.br/_next/image?url=https%3A%2F%2Finstitucional-and-info-production.s3.us-east-2.amazonaws.com%2Fimages%2F62c812d3-77bf-471f-bd45-1393eec5b0aa%2Fenergia-solar.jpg&w=3840&q=100" width="300" height="200" alt="paneles solares" />
+          </div>
         </div>
-        </div>
-        
       </header>
-    </div>
+    </animated.div>
   );
 }
 
