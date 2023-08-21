@@ -14,7 +14,7 @@ function Navbar() {
             <Link to="/register" className="nav-link">Register</Link>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <Link to="/news" className="nav-link">News</Link>
           </li>
         </ul>
       </nav>

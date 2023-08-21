@@ -1,0 +1,44 @@
+.news-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg?auto=compress&cs=tinysrgb&w=1600'); /* Ruta a tu imagen de paisaje */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(39, 37, 37, 0.1);
+  text-align: left;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.news-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.news-link {
+  color: #1476df;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
