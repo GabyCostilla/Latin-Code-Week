@@ -4,9 +4,13 @@ import "./index.css";
 import Register from "./register";
 import Home from "./home";
 import Contact from "./contact";
+import Geoter from "./geotermica";
+import Eolica from "./eolica";
 import Navbar from "./navbar";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +21,8 @@ root.render(
           <Route index element={<Home />} />
           <Route path="register" element={<Register />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="geotermica" element={<Geoter />} />
+          <Route path="eolica" element={<Eolica />} />
         </Route>
       </Routes>
     </BrowserRouter>

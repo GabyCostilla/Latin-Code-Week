@@ -1,0 +1,22 @@
+.eolica-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.eolica-header {
+    background-color: #3db77e;
+    color: white;
+    padding: 20px;
+}
+
+.eolica-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.eolica-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
