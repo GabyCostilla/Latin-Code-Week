@@ -8,13 +8,13 @@ function Navbar() {
       <nav className="navbar">
         <ul className="nav-list">
           <li>
-            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/" className="nav-link">Inicio</Link>
           </li>
           <li>
-            <Link to="/register" className="nav-link">Register</Link>
+            <Link to="/register" className="nav-link">Registrar</Link>
           </li>
           <li>
-            <Link to="/news" className="nav-link">News</Link>
+            <Link to="/news" className="nav-link">Noticias</Link>
           </li>
         </ul>
       </nav>

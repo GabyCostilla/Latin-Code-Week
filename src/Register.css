@@ -1,12 +1,11 @@
 /* Estilos globales */
 body {
-  font-family: Arial, sans-serif;
+  font-family:Lucida Bright  ;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
-
 /* Estilos específicos para Home */
 .App-header {
   background-color: #282c34;
