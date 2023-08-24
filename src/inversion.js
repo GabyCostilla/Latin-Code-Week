@@ -28,9 +28,9 @@ function Inversion() {
     setInvestmentHistory(updatedHistory);
 
     if (earnedAmount >= 0) {
-      alert(`¡Ganaste ${earnedAmount.toFixed(2)}% de tu inversión en ${selectedEnergy}!`);
+      alert(`🌞 ¡Ganaste ${earnedAmount.toFixed(2)}% de tu inversión en ${selectedEnergy}! 🌞`);
     } else {
-      alert(`Perdiste ${Math.abs(earnedAmount).toFixed(2)}% de tu inversión en ${selectedEnergy}.`);
+      alert(`☁️ Perdiste ${Math.abs(earnedAmount).toFixed(2)}% de tu inversión en ${selectedEnergy}. ☁️`);
     }
 
     if (updatedHistory.length >= 5) {
@@ -48,9 +48,9 @@ function Inversion() {
 
   return (
     <div className="investment-container">
-      <h2>Inversión</h2>
+      <h2>💰 Inversión en Energías Renovables 💰</h2>
       <div className="investment-form">
-        <label>Selecciona el tipo de energía renovable:</label>
+        <label>🌿 Selecciona el tipo de energía renovable:</label>
         <select value={selectedEnergy} onChange={handleEnergySelect}>
           <option value="">Seleccione una opción</option>
           {renewableEnergyOptions.map((option, index) => (
@@ -59,7 +59,7 @@ function Inversion() {
             </option>
           ))}
         </select>
-        <label>Ingresa la cantidad a invertir:</label>
+        <label>💲 Ingresa la cantidad a invertir:</label>
         <input
           type="number"
           min="0"
@@ -67,10 +67,10 @@ function Inversion() {
           value={investmentAmount}
           onChange={handleAmountChange}
         />
-        <button onClick={handleInvest}>Invertir</button>
+        <button onClick={handleInvest}>🚀 Invertir 🚀</button>
       </div>
       <div className="investment-history">
-        <h3>Historial de Inversiones</h3>
+        <h3>📜 Historial de Inversiones 📜</h3>
         <ul>
           {investmentHistory.map((investment, index) => (
             <li key={index}>

@@ -1,11 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Register.css";
-import axios from "axios"
+import axios from "axios";
 
 function Register() {
   const [userData, setUserData] = useState({
-    firstname: "",
+    firstName: "",
     lastName: "",
     dni: "",
     birthday: "",
@@ -25,17 +24,17 @@ function Register() {
   itr/api_practico5/users`,
         userData
       )
-
       .then((response) => {
         if (response.status === 201) {
-          window.alert("Usuario registrado");
+          window.alert("🎉 Usuario registrado 🎉");
         }
       })
-      .catch((error) => window.alert("Error al registrar el usuario"));
+      .catch((error) => window.alert("❌ Error al registrar el usuario ❌"));
   };
+
   return (
     <>
-      <h1>Register</h1>
+      <h1>📝 Registrate 📝</h1>
       <form className="register-form" onSubmit={handleSubmit}>
         <label htmlFor="firstName">Nombre:</label>
         <input
@@ -87,7 +86,7 @@ function Register() {
           required
         />
         <br />
-        <button type="submit">Registrar</button>
+        <button type="submit">📥 Registrar 📥</button>
       </form>
     </>
   );

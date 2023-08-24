@@ -14,20 +14,20 @@ function News() {
         setNews(response.data.articles);
       })
       .catch(error => {
-        console.error('Error fetching news:', error);
+        console.error('❗️ Error fetching news:', error);
       });
   }, []);
 
   return (
     <div className="news-container">
-      <h2 className="news-title">Últimas Noticias sobre Energías Renovables</h2>
+      <h2 className="news-title">📰 Últimas Noticias sobre Energías Renovables 🌱</h2>
       <ul className="news-list">
         {news.map((article, index) => (
           <li key={index} className="news-item">
             <h3 className="news-title">{article.title}</h3>
             <p className="news-description">{article.description}</p>
             <a className="news-link" href={article.url} target="_blank" rel="noopener noreferrer">
-              Leer más
+              Leer más ➡️
             </a>
           </li>
         ))}
