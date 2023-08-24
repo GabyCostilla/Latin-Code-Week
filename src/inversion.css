@@ -3,7 +3,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #f0f7f6; /* Color de fondo más natural */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -14,21 +14,22 @@
   
   .investment-form label {
     font-size: 18px;
-    color: #333;
+    color: #468c83; /* Color de texto más ecológico */
     margin-bottom: 10px;
   }
   
-  .investment-form input {
+  .investment-form input,
+  .investment-form select { /* Aplica el estilo a las listas desplegables también */
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #9bb5b0; /* Borde más suave */
     border-radius: 5px;
     margin-bottom: 15px;
   }
   
   .investment-form button {
-    background-color: #007bff;
+    background-color: #2a9d8f; /* Color de botón más ecológico */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -38,7 +39,7 @@
   }
   
   .investment-form button:hover {
-    background-color: #0056b3;
+    background-color: #20746f; /* Color más oscuro al hacer hover */
   }
   
   .result-message {
@@ -47,11 +48,3 @@
     margin-top: 15px;
   }
   
-  .investment-form select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
