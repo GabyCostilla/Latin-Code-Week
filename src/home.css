@@ -27,10 +27,10 @@ p {
 
 .container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1200px;
+  flex-direction: column;
+  margin: 6%;
+  max-width: 1000px;
+  max-height: 1000px;
 }
 
 .container div {
@@ -38,20 +38,16 @@ p {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.);
 }
 
-a {
-  display: block;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  transition: color 0.3s ease;
+
+.links {
+  color: #000000;
 }
 
-a:hover {
-  color: #0056b3;
+.links:hover {
+  color: #0011fa;
 }
 
 img {
