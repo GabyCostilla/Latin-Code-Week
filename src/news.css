@@ -5,7 +5,7 @@ body {
 .news-container {
   padding: 20px;
   text-align: center;
-  background-image: url('https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg?auto=compress&cs=tinysrgb&w=1600'); /* Ruta a tu imagen de paisaje */
+  background-image: url('https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta a tu imagen de paisaje */
   background-size: cover;
   background-position: center;
 }

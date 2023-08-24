@@ -8,11 +8,12 @@ body {
 
 /* Estilos específicos para Home */
 .App-header {
-  background-color: #2a2d3d;
+  background-color: #228B22;
   color: #ffffff;
   text-align: center;
   padding: 40px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
 h1 {
@@ -28,7 +29,7 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  margin: 6%;
+  margin: 1%;
   max-width: 1000px;
   max-height: 1000px;
 }
@@ -36,9 +37,10 @@ p {
 .container div {
   flex-basis: calc(50% - 20px);
   margin-bottom: 20px;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 20px;  
+  background-color: #289228;
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.);
+  border-radius: 20px;
 }
 
 
