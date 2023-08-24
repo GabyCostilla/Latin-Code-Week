@@ -8,6 +8,7 @@ import Geoter from "./geotermica";
 import Eolica from "./eolica";
 import Solar from "./solar";
 import Navbar from "./navbar";
+import Inversion from "./inversion"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ root.render(
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="register" element={<Register />} />
+          <Route path="inversion" element={<Inversion />} />
           <Route path="news" element={<News />} />
           <Route path="geotermica" element={<Geoter />} />
           <Route path="eolica" element={<Eolica />} />

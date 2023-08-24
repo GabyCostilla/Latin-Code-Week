@@ -14,6 +14,9 @@ function Navbar() {
             <Link to="/register" className="nav-link">Registrar</Link>
           </li>
           <li>
+            <Link to="/inversion">Inversion</Link>
+          </li>
+          <li>
             <Link to="/news" className="nav-link">Noticias</Link>
           </li>
         </ul>
