@@ -2,7 +2,7 @@
 
 ###
 
-<h2 align="left">integrantes: <br>Tomas Cipriano Bagnardi<br>Paul Michel Josue<br>Gabriel Agustin Costilla<br>Patricio Gallo Dillon<br>Nciolas Coronel Arevalo<br>Maximiliano Palavecino</h2>
+<h2 align="left">integrantes: <br>Tomas Cipriano Bagnardi<br>Paul Michel Josue<br>Gabriel Agustin Costilla<br>Patricio Gallo Dillon<br>Nicolas Coronel Arevalo<br>Maximiliano Palavecino</h2>
 
 ###
 
