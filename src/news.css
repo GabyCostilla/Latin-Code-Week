@@ -1,15 +1,16 @@
 body {
-  font-family:Lucida Bright  ;
-
+  font-family: 'Lucida Bright', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 .news-container {
   padding: 20px;
   text-align: center;
-  background-image: url('https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Ruta a tu imagen de paisaje */
+  background-image: url('https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
 }
-
 
 .news-list {
   display: grid;
@@ -20,7 +21,7 @@ body {
 }
 
 .news-item {
-  background-color: #f4f4f4;
+  background-color: #dfeee7; /* Color de fondo más ecológico */
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(39, 37, 37, 0.1);
@@ -30,6 +31,7 @@ body {
 .news-title {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #468c83; /* Color de título más ecológico */
 }
 
 .news-description {
@@ -41,8 +43,10 @@ body {
   color: #1476df;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
 .news-link:hover {
   text-decoration: underline;
+  color: #0056b3; /* Color de enlace más brillante al hacer hover */
 }

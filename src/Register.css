@@ -1,15 +1,16 @@
 /* Estilos globales */
 body {
-  font-family:Lucida Bright  ;
+  font-family: 'Lucida Bright', sans-serif;
   background-color: #FFA07A;
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
+
 /* Estilos específicos para Home */
 .App-header {
-  background-color: #282c34;
-  color: #FFD700;
+  background-color: #FF8C00; /* Color anaranjado para el encabezado */
+  color: #468c83; /* Color de texto más ecológico */
   text-align: center;
   padding: 20px;
 }
@@ -36,21 +37,21 @@ a {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #007bff;
+  color: #FF8C00; /* Color anaranjado para los enlaces */
   font-weight: bold;
   transition: color 0.3s ease-in-out; /* Agregado para una transición suave */
 }
 
 a:hover {
-  color: #0056b3;
+  color: #FFA500; /* Color de enlace más brillante al hacer hover */
 }
 
 img {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
-  border-radius: 5px; /* Agregado un borde redondeado a las imágenes */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregado un sombreado sutil */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para el formulario de registro */
@@ -61,7 +62,7 @@ img {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregado un sombreado al formulario */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -80,14 +81,14 @@ input {
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #FF8C00; /* Color anaranjado para el botón */
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out; /* Agregado para una transición suave */
+  transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #FFA500; /* Color de botón más brillante al hacer hover */
 }
