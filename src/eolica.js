@@ -9,7 +9,7 @@ function Eolica() {
             <header className="eolica-header">
                 <h1>Energía Eólica</h1>
             </header>
-            <main className="eolica-content">
+            <main className="eolica-content"><br></br>
                 <img
                     src={WindEnergy}
                     alt="Energía Eólica"
@@ -30,7 +30,7 @@ function Eolica() {
                     renovable que contribuye a la reducción de emisiones de
                     gases de efecto invernadero.
                 </p>
-                <h1>Y como funciona una turbina eolica?</h1>
+                <h1>¿Y como funciona una turbina eólica?</h1>
                 <p>
                     Para comprender mejor cómo funciona una turbina eólica,
                     imagina una gran hélice conectada a un generador. Cuando el

@@ -1,8 +1,5 @@
-body {
-    font-family:Lucida Bright  ;
-
-}
 .eolica-container {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding: 20px;
 }

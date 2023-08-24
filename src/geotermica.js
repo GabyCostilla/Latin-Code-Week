@@ -9,7 +9,7 @@ function Geoter() {
             <header className="geoter-header">
                 <h1>Energía Geotérmica</h1>
             </header>
-            <main className="geoter-content">
+            <main className="geoter-content"><br></br>
                 <img
                     src={Geothermica}
                     alt="Energía Geotérmica"
@@ -22,7 +22,7 @@ function Geoter() {
                     descomposición de elementos radiactivos y el calor residual
                     del proceso de formación de la Tierra.
                 </p>
-                <h2>como se produce?</h2>
+                <h1>¿Cómo se produce?</h1>
                 <p>
                     Esta forma de energía puede ser utilizada para la generación
                     de electricidad y calefacción. Las plantas geotérmicas

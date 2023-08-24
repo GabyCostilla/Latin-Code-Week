@@ -9,10 +9,13 @@ function Solar() {
             <header className="solar-header">
                 <h1>Energía Solar</h1>
             </header>
-            <main className="solar-content">
+            <main className="solar-content"><br></br>
                 <img
                     src={SolarE}
+                    className="panelesImg"
                     alt="Energía Geotérmica"
+                    height={100}
+                    width={500}
                 />
                 <p>
                 La energía solar es una energía renovable, obtenida a partir del aprovechamiento
@@ -22,7 +25,7 @@ function Solar() {
                 Hoy en día, el calor y la luz del Sol pueden aprovecharse por medio de diversos 
                 captadores como células fotoeléctricas. 
                 </p>
-                <h2>como se produce?</h2>
+                <h1>¿Cómo se produce?</h1>
                 <p>
                 Las células solares fotovoltaicas convierten la luz del sol 
                 directamente en electricidad por el llamado efecto fotoeléctrico, 

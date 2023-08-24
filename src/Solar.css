@@ -3,6 +3,7 @@ body{
 }
 .solar-container {
     text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
 }
 
@@ -17,6 +18,10 @@ body{
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
+}
+
+.panelesImg {
+    max-width: 90%;
 }
 
 .solar-image {
