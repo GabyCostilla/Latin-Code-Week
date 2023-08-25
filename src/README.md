@@ -5,15 +5,6 @@
 <h1 align="center">LATIN CODE WEEK</h1>
 
 <p align="center">
-1) descarga git bash eh instalalo (consola de comandos)
-2) clona el repositorio con este comando (inserta comando)
-3) abrir la carpeta que acabas de clonar
-4) haz click derecho en y Git Bash Here
-5) en la terminal pon:
--npm i
--npm start
--espera que se abra el proyecto en el navegador
-
   ¡Bienvenidos a Latin Code Week! Somos un equipo apasionado por la tecnología y la sostenibilidad. Trabajamos juntos para crear soluciones innovadoras y ecológicas para un mundo mejor.
 </p>
 
