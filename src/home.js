@@ -16,6 +16,7 @@ function Home() {
           <div className="links">
             <Link to="/solar" className="button solar">Energía Solar ☀️</Link>
             <Link to="/eolica" className="button eolico">Energía Eólica 🌬️</Link>
+            <Link to="/hydroelectrica" className="button hydroelectrica">Energía hydroelectrica 🌊</Link>
             <Link to="/geotermica" className="button geotermico">Energía Geotérmica 🌋</Link>
             <p className="mini">🌱 ¡Haz clic en uno de los botones para saber más! 🌱</p>
           </div>

@@ -1,0 +1,23 @@
+.hydro-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.hydro-header {
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+}
+
+.hydro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hydro-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+}

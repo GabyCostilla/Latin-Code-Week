@@ -81,9 +81,19 @@ input {
   transition: background-color 0.3s;
 }
 
-.geotermico {
+.hydroelectrica {
   padding: 10px 20px;
   background-color: #0291ff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.geotermico {
+  padding: 10px 20px;
+  background-color: #ff8102;
   color: #000000;
   border: none;
   border-radius: 3px;

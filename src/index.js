@@ -7,6 +7,7 @@ import News from "./news";
 import Geoter from "./geotermica";
 import Eolica from "./eolica";
 import Solar from "./solar";
+import Hidro from "./hidro";
 import Navbar from "./navbar";
 import Inversion from "./inversion"
 import reportWebVitals from "./reportWebVitals";
@@ -28,6 +29,7 @@ root.render(
           <Route path="geotermica" element={<Geoter />} />
           <Route path="eolica" element={<Eolica />} />
           <Route path="solar" element={<Solar />} />
+          <Route path="hydroelectrica" element={<Hidro />} />
         </Route>
       </Routes>
     </BrowserRouter>
