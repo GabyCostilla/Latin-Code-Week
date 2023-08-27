@@ -38,6 +38,11 @@ function Nosotros() {
   return (
     <div className="nosotros-container">
       <h1>👩‍💻👨‍💻 ¡Bienvenidos a Latin Code Week! 👨‍💻👩‍💻</h1>
+      <img
+        src="https://junior.org.ar/wp-content/uploads/2023/05/Diseno-sin-titulo-2023-05-29T164745.659.png"
+        alt="Latin Code Week"
+        className="imagen"
+      />
       <p className="descripcion">
         Somos un equipo apasionado por la tecnología y la sostenibilidad.
         Trabajamos juntos para crear soluciones innovadoras y ecológicas para

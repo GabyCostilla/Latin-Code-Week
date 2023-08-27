@@ -8,6 +8,11 @@
     color: #fff;
   }
   
+  .imagen {
+    max-width: 80%;
+    height: auto;
+  }
+
   .nosotros-title {
     font-size: 28px;
     margin-bottom: 20px;
