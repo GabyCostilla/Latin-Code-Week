@@ -10,6 +10,7 @@ import Solar from "./solar";
 import Hidro from "./hidro";
 import Navbar from "./navbar";
 import Inversion from "./inversion"
+import Nosotros from "./Nosotros"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="register" element={<Register />} />
           <Route path="inversion" element={<Inversion />} />
+          <Route path="nosotros" element={<Nosotros />} />
           <Route path="news" element={<News />} />
           <Route path="geotermica" element={<Geoter />} />
           <Route path="eolica" element={<Eolica />} />

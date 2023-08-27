@@ -19,6 +19,9 @@ function Navbar() {
           <li>
             <Link to="/news" className="nav-link">Noticias</Link>
           </li>
+          <li>
+            <Link to="/nosotros" className="nav-link">Nosotros</Link>
+          </li>
         </ul>
       </nav>
       <div className="outlet-content">
