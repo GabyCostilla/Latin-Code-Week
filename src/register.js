@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Register.css";
-import axios from "axios";
 
 function Register() {
   const [userData, setUserData] = useState({
@@ -18,18 +17,21 @@ function Register() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios
-      .post(
-        `https://my-json-server.typicode.com/fedevirgolini-
-  itr/api_practico5/users`,
-        userData
-      )
-      .then((response) => {
-        if (response.status === 201) {
-          window.alert("🎉 Usuario registrado 🎉");
-        }
-      })
-      .catch((error) => window.alert("❌ Error al registrar el usuario ❌"));
+    // Simulación de registro exitoso
+    // Aquí podrías realizar la llamada a la API en una implementación real
+    // y manejar la respuesta correctamente
+    setTimeout(() => {
+      window.alert("🎉 Usuario registrado 🎉");
+    }, 1000); // Simula un tiempo de espera de 1 segundo
+
+    // Limpia los campos después de registrar (esto puede cambiar según tus necesidades)
+    setUserData({
+      firstName: "",
+      lastName: "",
+      dni: "",
+      birthday: "",
+      email: "",
+    });
   };
 
   return (
