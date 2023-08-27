@@ -13,6 +13,12 @@
     margin-bottom: 20px;
   }
   
+  .descripcion {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
   .autores-list {
     list-style: none;
     padding: 0;
@@ -21,6 +27,11 @@
   .autor-item {
     font-size: 18px;
     margin: 10px 0;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    margin: 20px 0;
   }
   
   .mision-title,

@@ -14,22 +14,22 @@ const autores = [
   },
   {
     nombre: "Gabriel Agustin Costilla",
-    rol: "Ingeniero en Sistemas",
+    rol: "Desarrollador Backend",
     emoji: "🍃",
   },
   {
     nombre: "Patricio Gallo Dillon",
-    rol: "Desarrollador Frontend",
+    rol: "Analista de Datos",
     emoji: "🌲",
   },
   {
     nombre: "Nicolas Coronel Arevalo",
-    rol: "Analista de Datos",
+    rol: "Desarrollador Frontend",
     emoji: "🌴",
   },
   {
     nombre: "Maximiliano Palavecino",
-    rol: "Desarrollador Backend",
+    rol: "Consultor en Tecnología",
     emoji: "🌳",
   },
 ];
@@ -37,29 +37,34 @@ const autores = [
 function Nosotros() {
   return (
     <div className="nosotros-container">
-      <h1>🌱 Quiénes Somos 🌱</h1>
+      <h1>👩‍💻👨‍💻 ¡Bienvenidos a Latin Code Week! 👨‍💻👩‍💻</h1>
+      <p className="descripcion">
+        Somos un equipo apasionado por la tecnología y la sostenibilidad.
+        Trabajamos juntos para crear soluciones innovadoras y ecológicas para
+        un mundo mejor.
+      </p>
       <div className="autores-list">
-        <h3>👩‍💻👨‍💻 Integrantes 👨‍💻👩‍💻</h3>
+        <h3 className="titulo">🌱 Integrantes 🌱</h3>
         {autores.map((autor, index) => (
           <div key={index} className="autor-card">
             <span role="img" aria-label="Emoticono de autor">
               {autor.emoji}
             </span>{" "}
-            {autor.nombre}
+            {autor.nombre} - {autor.rol}
           </div>
         ))}
-       </div>
+      </div>
       <div className="mision">
-        <h3>Nuestra Misión 🌍</h3>
-        <p>
+        <h3 className="titulo">Nuestra Misión 🌍</h3>
+        <p className="descripcion">
           En Latin Code Week, nos esforzamos por fomentar la conciencia ambiental
           a través de la tecnología. Creemos que la combinación de la innovación
           y la sostenibilidad es clave para enfrentar los desafíos globales.
         </p>
       </div>
       <div className="unete">
-        <h3>¡Únete a Nosotros! 📞</h3>
-        <p>
+        <h3 className="titulo">¡Únete a Nosotros! 📞</h3>
+        <p className="descripcion">
           Síguenos en{" "}
           <a
             href="https://www.instagram.com/instituto_tecnico_renault/"
@@ -67,6 +72,15 @@ function Nosotros() {
             rel="noopener noreferrer"
           >
             Instagram
+          </a>
+          y visita también{" "}
+          <a
+            href="https://junior.org.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="unete-link"
+          >
+            Junior Achievement Argentina.
           </a>
         </p>
       </div>
