@@ -29,7 +29,7 @@ function Inversion() {
     setInvestmentHistory(updatedHistory);
 
     if (updatedHistory.length >= 5) {
-      updatedHistory.shift(); //cuando llegue a su tope que es 5 lo borre
+      updatedHistory.shift(); // Remove the oldest investment if history length exceeds 5
     }
   };
 
@@ -43,8 +43,9 @@ function Inversion() {
 
   return (
     <div className="investment-container">
+      <h2>📈 Inversión en Energías Renovables 📈</h2>
       <div className="investment-form">
-        <label>Selecciona el tipo de energía renovable:</label>
+        <h3>🌿 Selecciona el tipo de energía renovable:</h3>
         <select value={selectedEnergy} onChange={handleEnergySelect}>
           <option value="">Seleccione una opción</option>
           {renewableEnergyOptions.map((option, index) => (
@@ -53,7 +54,7 @@ function Inversion() {
             </option>
           ))}
         </select>
-        <label>Ingresa la cantidad a invertir:</label>
+        <h3>💲 Ingresa la cantidad a invertir:</h3>
         <input
           type="number"
           min="0"
@@ -61,10 +62,10 @@ function Inversion() {
           value={investmentAmount}
           onChange={handleAmountChange}
         />
-        <button onClick={handleInvest}>Invertir</button>
+        <button onClick={handleInvest}>🚀 Invertir 🚀</button>
       </div>
       <div className="investment-history">
-        <h3>Historial de Inversiones</h3>
+        <h3>📜 Historial de Inversiones 📜</h3>
         <ul>
           {investmentHistory.map((investment, index) => (
             <li key={index}>
