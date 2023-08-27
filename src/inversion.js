@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./inversion.css";
+import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 
 const renewableEnergyOptions = [
   "Energía Solar",
@@ -27,14 +28,8 @@ function Inversion() {
     const updatedHistory = [...investmentHistory, investment];
     setInvestmentHistory(updatedHistory);
 
-    if (earnedAmount >= 0) {
-      alert(`🌞 ¡Ganaste ${earnedAmount.toFixed(2)}% de tu inversión en ${selectedEnergy}! 🌞`);
-    } else {
-      alert(`☁️ Perdiste ${Math.abs(earnedAmount).toFixed(2)}% de tu inversión en ${selectedEnergy}. ☁️`);
-    }
-
     if (updatedHistory.length >= 5) {
-      setInvestmentHistory([]); // Clear history after 5 investments
+      updatedHistory.shift(); //cuando llegue a su tope que es 5 lo borre
     }
   };
 
@@ -48,9 +43,8 @@ function Inversion() {
 
   return (
     <div className="investment-container">
-      <h2>💰 Inversión en Energías Renovables 💰</h2>
       <div className="investment-form">
-        <label>🌿 Selecciona el tipo de energía renovable:</label>
+        <label>Selecciona el tipo de energía renovable:</label>
         <select value={selectedEnergy} onChange={handleEnergySelect}>
           <option value="">Seleccione una opción</option>
           {renewableEnergyOptions.map((option, index) => (
@@ -59,7 +53,7 @@ function Inversion() {
             </option>
           ))}
         </select>
-        <label>💲 Ingresa la cantidad a invertir:</label>
+        <label>Ingresa la cantidad a invertir:</label>
         <input
           type="number"
           min="0"
@@ -67,10 +61,10 @@ function Inversion() {
           value={investmentAmount}
           onChange={handleAmountChange}
         />
-        <button onClick={handleInvest}>🚀 Invertir 🚀</button>
+        <button onClick={handleInvest}>Invertir</button>
       </div>
       <div className="investment-history">
-        <h3>📜 Historial de Inversiones 📜</h3>
+        <h3>Historial de Inversiones</h3>
         <ul>
           {investmentHistory.map((investment, index) => (
             <li key={index}>
@@ -78,6 +72,15 @@ function Inversion() {
             </li>
           ))}
         </ul>
+        <ResponsiveContainer width="100%" height={300}>
+          <LineChart data={investmentHistory}>
+            <XAxis dataKey="timestamp" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Line type="monotone" dataKey="percentage" stroke="#8884d8" />
+          </LineChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );
