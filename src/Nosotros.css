@@ -1,73 +1,49 @@
 .nosotros-container {
-    text-align: center;
-    padding: 30px;
-    background-color: #f5f5f5;
+    background-color: #6dc28a;
+    padding: 40px;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Lucida Bright", sans-serif;
+    color: #fff;
   }
   
-  .nosotros-container h2 {
-    font-size: 24px;
+  .nosotros-title {
+    font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .nosotros-container p {
-    font-size: 16px;
-    margin-bottom: 30px;
-    line-height: 1.5;
   }
   
   .autores-list {
-    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
   }
   
-  .autor-card {
+  .autor-item {
     font-size: 18px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #008000;
+    margin: 10px 0;
   }
   
-  .mision {
-    margin-bottom: 30px;
+  .mision-title,
+  .unete-title {
+    font-size: 24px;
+    margin: 20px 0;
   }
   
-  .mision h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .mision p {
+  .mision-text,
+  .unete-text {
     font-size: 16px;
     line-height: 1.5;
   }
   
-  .unete {
-    margin-bottom: 30px;
-  }
-  
-  .unete h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .unete p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .unete a {
-    color: #008000;
+  .unete-link {
+    color: #f0f7f6;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
   }
   
-  .unete a:hover {
+  .unete-link:hover {
     text-decoration: underline;
+    color: #d4ebe8;
   }
   
