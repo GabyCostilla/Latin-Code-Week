@@ -5,49 +5,50 @@ const autores = [
   {
     nombre: "Tomas Cipriano Bagnardi",
     rol: "Desarrollador Full Stack",
+    emoji: "🌍",
   },
   {
     nombre: "Paul Michel Josue",
     rol: "Diseñador UX/UI",
+    emoji: "🌿",
   },
   {
     nombre: "Gabriel Agustin Costilla",
     rol: "Ingeniero en Sistemas",
+    emoji: "🍃",
   },
   {
     nombre: "Patricio Gallo Dillon",
     rol: "Desarrollador Frontend",
+    emoji: "🌲",
   },
   {
     nombre: "Nicolas Coronel Arevalo",
     rol: "Analista de Datos",
+    emoji: "🌴",
   },
   {
     nombre: "Maximiliano Palavecino",
     rol: "Desarrollador Backend",
+    emoji: "🌳",
   },
 ];
 
 function Nosotros() {
   return (
     <div className="nosotros-container">
-      <h2>👩‍💻👨‍💻 ¡Bienvenidos a Latin Code Week! 👨‍💻👩‍💻</h2>
-      <p>
-        Somos un equipo apasionado por la tecnología y la sostenibilidad.
-        Trabajamos juntos para crear soluciones innovadoras y ecológicas para
-        un mundo mejor.
-      </p>
+      <h1>🌱 Quiénes Somos 🌱</h1>
       <div className="autores-list">
-        <h3>Integrantes 🌱</h3>
+        <h3>👩‍💻👨‍💻 Integrantes 👨‍💻👩‍💻</h3>
         {autores.map((autor, index) => (
           <div key={index} className="autor-card">
-            <span role="img" aria-label="Emoticono de globo terráqueo">
-              🌍
+            <span role="img" aria-label="Emoticono de autor">
+              {autor.emoji}
             </span>{" "}
             {autor.nombre}
           </div>
         ))}
-      </div>
+       </div>
       <div className="mision">
         <h3>Nuestra Misión 🌍</h3>
         <p>
