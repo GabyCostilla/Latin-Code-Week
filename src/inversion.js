@@ -28,6 +28,12 @@ function Inversion() {
     const updatedHistory = [...investmentHistory, investment];
     setInvestmentHistory(updatedHistory);
 
+    if (earnedAmount >= 0) {
+      alert(`🌞 ¡Ganaste ${earnedAmount.toFixed(2)}% de tu inversión en ${selectedEnergy}! 🌞`);
+    } else {
+      alert(`☁️ Perdiste ${Math.abs(earnedAmount).toFixed(2)}% de tu inversión en ${selectedEnergy}. ☁️`);
+    }
+
     if (updatedHistory.length >= 5) {
       updatedHistory.shift(); // Remove the oldest investment if history length exceeds 5
     }
