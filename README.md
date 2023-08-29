@@ -21,10 +21,10 @@
 
 - 🌍 Tomas Cipriano Bagnardi
 - 🌿 Paul Michel Josue
-- 🌳 Gabriel Agustin Costilla
+- 🍃 Gabriel Agustin Costilla
 - 🌲 Patricio Gallo Dillon
 - 🌴 Nicolas Coronel Arevalo
-- 🍃 Maximiliano Palavecino
+- 🌳 Maximiliano Palavecino
 
 ## 🌍 Nuestra Misión
 
