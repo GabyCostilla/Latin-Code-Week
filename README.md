@@ -35,5 +35,5 @@ En Latin Code Week, nos esforzamos por fomentar la conciencia ambiental a travé
 siguenos en instagram:https://www.instagram.com/instituto_tecnico_renault/
 
 <div align="center">
-  <img height="300" src="https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  />
+  <img height="500" src="https://images.pexels.com/photos/896673/pexels-photo-896673.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  />
 </div>
